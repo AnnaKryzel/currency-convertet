@@ -1,7 +1,7 @@
 # Currency Converter
 ![Currency-converter-image](images/currency-converter-image.png)
 # Demo
-You can visit my currency converter on this website: https://github.com/AnnaKryzel/currency-convertet
+You can visit my currency converter on this website: https://github.com/AnnaKryzel/currency-converter
 
 # Description
 This is my second project created as part of YouCode course.
