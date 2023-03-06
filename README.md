@@ -1,5 +1,5 @@
 # Currency Converter
-![Currency-converter-image](images/currency-converter-image.png)
+![Currency-converter-image](images/currency-converter-image2.png)
 # Demo
 You can visit my currency converter on this website: https://annakryzel.github.io/currency-converter/
 
