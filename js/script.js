@@ -4,7 +4,7 @@
         exchangeResultElement.innerText = exchangeResult.toFixed(2);
     };
     
-    const calculateResult = (event, amount, currency) => {
+    const calculateResult = (event) => {
         event.preventDefault();
 
         const amountElement = document.querySelector(".js-amount");
