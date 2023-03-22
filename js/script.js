@@ -1,16 +1,26 @@
-let valueElement = document.querySelector(".js-value");
-let formElement = document.querySelector(".js-form");
-let exchangeResultElement = document.querySelector(".js-exchangeResult");
-let currencyElement = document.querySelector(".js-currency");
+{   
+    const updateResultText = (exchangeResult) => {
+        const exchangeResultElement = document.querySelector(".js-exchangeResult");
+        exchangeResultElement.innerText = exchangeResult.toFixed(2);
+    };
+    
+    const calculateResult = (event, amount, currency) => {
+        event.preventDefault();
 
-document.addEventListener("submit", (event) => {
-    event.preventDefault();
+        const amountElement = document.querySelector(".js-amount");
+        const currencyElement = document.querySelector(".js-currency");
 
+        let amount = amountElement.value;
+        let currency = currencyElement.value;
+        let exchangeResult = amount / currency;
 
-    let value = valueElement.value;
-    let currency = currencyElement.value;
+        updateResultText(exchangeResult);
+    };
 
-    let exchangeResult = value / currency;
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", calculateResult);
+    };
 
-    exchangeResultElement.innerText = exchangeResult.toFixed(2);
-});
+    init();
+}
